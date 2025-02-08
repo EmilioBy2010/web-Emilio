@@ -1,0 +1,84 @@
+/* General */
+body {
+    background-color: #06112c; /* Azul */
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF; /* Blanco */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos principales */
+.title {
+    font-size: 2.5rem;
+    color: #FD98FB; /* Rosa */
+    text-decoration-color: #D6FF6B; /* Verde */
+    text-decoration: underline;
+}
+
+/* Subtítulos */
+.subtitle {
+    font-size: 1.8rem;
+    color: #D6FF6B; /* Verde */
+}
+
+/* Descripción */
+.description {
+    font-size: 1.2rem;
+}
+
+/* Lista de datos curiosos */
+.curious-facts {
+    border: 2px solid #FD98FB; /* Rosa */
+    padding: 15px;
+    border-radius: 10px;
+    list-style-type: disc;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Contenedor de imagen y widget */
+.content-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espaciado entre imagen y widget */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que se acomode en pantallas pequeñas */
+}
+
+/* Imagen */
+.image {
+    max-width: 60%; /* Reduce tamaño */
+    height: auto;
+    border: 5px solid #FD98FB; /* Borde rosa */
+    border-radius: 15px;
+}
+
+/* Widget del clima */
+.weather-widget {
+    max-width: 180px; /* Tamaño más pequeño */
+    height: 360px; /* Ajuste de altura */
+    border: 3px solid #FD98FB; /* Borde rosa */
+    border-radius: 10px;
+}
+
+/* Animación de color al pasar el mouse sobre el título */
+@keyframes color-change {
+    0% {
+        color: rgb(214, 154, 238);
+    }
+
+    50% {
+        color: rgb(255, 255, 255);
+    }
+
+    100% {
+        color: rgb(141, 194, 207);
+    }
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
